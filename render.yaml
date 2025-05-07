@@ -1,0 +1,14 @@
+# Exported from Render on 2025-05-07T16:47:07Z
+services:
+- type: web
+  name: schoolwork
+  runtime: node
+  repo: https://github.com/Delinquenttsss/rigtools-updated-ui
+  plan: free
+  envVars:
+  - key: PORT
+    sync: false
+  region: oregon
+  buildCommand: npm i
+  startCommand: npm start
+version: "1"
